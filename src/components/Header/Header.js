@@ -6,6 +6,8 @@ import './Header.css'
 const Header = () => {
     const topics = useLoaderData()
     const alltopics = topics.data;
+
+
     return (
         <div>
             <div className='alltopic'>
