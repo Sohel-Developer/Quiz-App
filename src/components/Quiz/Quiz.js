@@ -19,7 +19,7 @@ const Quiz = () => {
             .then(data => setQuiz(data.data))
     }, [])
 
-    console.log(quiz);
+    // console.log(quiz);
     console.log(questions);
 
 
