@@ -23,12 +23,12 @@ const QuizIteam = ({ questionIteams }) => {
             <h1 className='text-2xl'>{questionName}</h1>
             <label htmlFor="my-modal" className="btn btn-xs modal-button">Correct Answare</label>
 
-            <div>
+            <div className='grid grid-cols-2'>
                 {
-                    quizIteam.map((q) => <button
+                    quizIteam.map((q) => <div
                         key={q}
                         onClick={() => check(q)}
-                        className='btn btn-outline btn-primary m-2 '>{q}</button>)
+                        className='cursor-pointer border p-2 m-2 '>{q}</div>)
                 }
             </div>
 

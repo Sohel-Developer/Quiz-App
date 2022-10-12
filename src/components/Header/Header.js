@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import TopicsCard from '../TopicsCard/TopicsCard';
 import './Header.css'
+import headerImage from '../../image/headerImage.jpg'
 
 const Header = () => {
     const topics = useLoaderData()
@@ -10,7 +11,16 @@ const Header = () => {
 
     return (
         <div>
-            <div className='alltopic'>
+
+            <div className="carousel w-full mb-12">
+                <div id="slide1" className="carousel-item relative w-full">
+                    <img src={headerImage} className="w-full" />
+
+                </div>
+            </div>
+
+
+            <div className=' grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     alltopics.map((topic) => <TopicsCard
                         key={topic.id}
