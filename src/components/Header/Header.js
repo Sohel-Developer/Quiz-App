@@ -14,7 +14,7 @@ const Header = () => {
 
             <div className="carousel w-full mb-12">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src={headerImage} className="w-full" />
+                    <img src={headerImage} className="w-full headerimg" />
 
                 </div>
             </div>
