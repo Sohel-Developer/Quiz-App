@@ -4,6 +4,7 @@ import MainLayout from './components/MainLayout/MainLayout';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Quiz from './components/Quiz/Quiz';
+import Chart from './components/Chart/Chart';
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +20,10 @@ function App() {
         {
           path: 'quiz/:id',
           element: <Quiz />
+        },
+        {
+          path: '/statics',
+          element: <Chart />
         }
       ]
 

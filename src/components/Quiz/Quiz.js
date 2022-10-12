@@ -30,7 +30,7 @@ const Quiz = () => {
                 <h2>{total}</h2>
 
 
-                <div>
+                <div className='grid  md:grid-cols-2 lg:grid-cols-3'>
                     {
                         questions?.map((questionIteams, indexId) => <QuizIteam
                             key={indexId}
